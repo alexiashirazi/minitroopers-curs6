@@ -11,7 +11,7 @@
 
         <lombok.version>1.18.34</lombok.version>
 
-        <quarkus.platform.version>3.15.0</quarkus.platform.version>
+        <quarkus.platform.version>3.15.6</quarkus.platform.version>
     </properties>
 
     <dependencyManagement>
@@ -58,6 +58,24 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-orm-panache</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-h2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
